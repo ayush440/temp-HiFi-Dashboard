@@ -196,7 +196,7 @@ const sidebarContent = ref<'chart' | 'positions'>('chart')
 const sidebarTitle = computed(() => sidebarContent.value === 'chart' ? 'Additional Profit Items' : 'Additional Positions')
 
 const openChartSidebar = () => {
-  sidebarContent.value = 'positions'
+  sidebarContent.value = 'chart'
   isSidebarOpen.value = true
 }
 
@@ -278,7 +278,14 @@ const displayedPositions = computed(() => {
   if (props.mode === 'live') {
     positionsToDisplay.push(...positions.value.map(p => ({ ...p, isPaper: false })))
   } else if (props.mode === 'paper') {
-    positionsToDisplay.push(...paperPositions.value.map(p => ({ ...p, isPaper: true })))
+    // Check if paperPositions.value is an array before using map
+    if (Array.isArray(paperPositions.value)) {
+      positionsToDisplay.push(...paperPositions.value.map(p => ({ ...p, isPaper: true })))
+    } else {
+      console.warn('paperPositions.value is not an array:', paperPositions.value)
+      // If it's not an array, you might want to handle it differently, e.g.:
+      // positionsToDisplay = Object.values(paperPositions.value).map(p => ({ ...p, isPaper: true }))
+    }
   }
   
   return positionsToDisplay
@@ -346,6 +353,7 @@ onMounted(async () => {
 
 watch(() => [strategiesPositions.value, paperPositionsStore.mainPaperPositions, props.mode], updateChart, { deep: true })
 
+
 interface Broker {
   id: number
   broker_name: string
@@ -380,10 +388,9 @@ const brokersToken = computed(() => {
 })
 </script>
 
-
 <style scoped lang="scss">
 .donut-chart-container {
-  @apply bg-white rounded-lg shadow-sm p-4 sm:p-6  ;
+  @apply bg-white rounded-lg shadow-sm p-4 sm:p-6;
   height: 300px; /* Fixed height */
 }
 

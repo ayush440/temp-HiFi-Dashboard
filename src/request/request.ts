@@ -95,7 +95,7 @@ if (config.env == "production") {
   baseUrl = ref(currentRootUrl);
 } else {
 
-  baseUrl = ref("http://localhost:8081");
+  baseUrl = ref("https://37d8-2405-201-5c32-b034-a83b-2805-cf7e-676.ngrok-free.app");
 }
 
 
@@ -146,9 +146,9 @@ const endpoints: any = ref({
 const getApiUrl = (endpoint: string) => {
   if (config.env != "production") {
     if (endpoint === "login" || endpoint === "logout" || endpoint === "profile" || endpoint === "updateUser" || endpoint === "changePassword" || endpoint === "register" || endpoint === "verifyOTP" || endpoint === "sendForgotOTP" || endpoint === "forgot") {
-      baseUrl = ref("http://localhost:8081");
+      baseUrl = ref("https://37d8-2405-201-5c32-b034-a83b-2805-cf7e-676.ngrok-free.app");
     } else {
-      baseUrl = ref("http://localhost:8082");
+      baseUrl = ref("https://37d8-2405-201-5c32-b034-a83b-2805-cf7e-676.ngrok-free.app");
     }
   }
 
