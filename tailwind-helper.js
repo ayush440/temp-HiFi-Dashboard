@@ -7,19 +7,19 @@ export const helpers = {
       return `rgb(var(${variable}) / ${opacityValue})`;
     };
   },
+  
   toRGB(colors) {
     const tempColors = { ...colors };
-    const rgbColors = Object.entries(tempColors);
-    for (const [key, value] of rgbColors) {
-      if (typeof value === 'string') {
-        if (value.replace('#', '').length === 6) {
-          const aRgbHex = value.replace('#', '').match(/.{1,2}/g);
-          tempColors[key] = `${parseInt(aRgbHex[0], 16)} ${parseInt(
-            aRgbHex[1],
-            16
-          )} ${parseInt(aRgbHex[2], 16)}`;
-        }
-      } else {
+    
+    // Loop through each color entry
+    for (const [key, value] of Object.entries(tempColors)) {
+      // If the value is a hex string (e.g., "#ff0000"), convert to RGB
+      if (typeof value === 'string' && value.startsWith('#') && value.length === 7) {
+        const aRgbHex = value.replace('#', '').match(/.{1,2}/g);
+        tempColors[key] = `${parseInt(aRgbHex[0], 16)} ${parseInt(aRgbHex[1], 16)} ${parseInt(aRgbHex[2], 16)}`;
+      }
+      // If the value is an object (like `colors.red`), recursively convert to RGB
+      else if (typeof value === 'object' && value !== null) {
         tempColors[key] = helpers.toRGB(value);
       }
     }
