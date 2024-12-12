@@ -1,8 +1,9 @@
-import '@rushstack/eslint-patch/modern-module-resolution';
+/* eslint-env node */
+require('@rushstack/eslint-patch/modern-module-resolution')
 
-export default {
+module.exports = {
   root: true,
-  extends: [
+  'extends': [
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     '@vue/eslint-config-typescript',
@@ -14,7 +15,7 @@ export default {
         'cypress/e2e/**/*.{cy,spec}.{js,ts,jsx,tsx}',
         'cypress/support/**/*.{js,ts,jsx,tsx}'
       ],
-      extends: [
+      'extends': [
         'plugin:cypress/recommended'
       ]
     }
@@ -22,4 +23,4 @@ export default {
   parserOptions: {
     ecmaVersion: 'latest'
   }
-};
+}

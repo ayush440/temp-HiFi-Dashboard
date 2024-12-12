@@ -1,28 +1,31 @@
-export const helpers = {
-  withOpacityValue(variable) {
-    return ({ opacityValue }) => {
-      if (opacityValue === undefined) {
-        return `rgb(var(${variable}))`;
+const helpers = {
+    withOpacityValue: function (variable) {
+      return ({ opacityValue }) => {
+        if (opacityValue === undefined) {
+          return `rgb(var(${variable}))`;
+        }
+        return `rgb(var(${variable}) / ${opacityValue})`;
+      };
+    },
+    toRGB: function (colors) {
+      const tempColors = Object.assign({}, colors);
+      const rgbColors = Object.entries(tempColors);
+      for (const [key, value] of rgbColors) {
+        if (typeof value === "string") {
+          if (value.replace("#", "").length == 6) {
+            const aRgbHex = value.replace("#", "").match(/.{1,2}/g);
+            tempColors[key] = `${parseInt(aRgbHex[0], 16)} ${parseInt(
+              aRgbHex[1],
+              16
+            )} ${parseInt(aRgbHex[2], 16)}`;
+          }
+        } else {
+          tempColors[key] = helpers.toRGB(value);
+        }
       }
-      return `rgb(var(${variable}) / ${opacityValue})`;
-    };
-  },
+      return tempColors;
+    },
+  };
   
-  toRGB(colors) {
-    const tempColors = { ...colors };
-    
-    // Loop through each color entry
-    for (const [key, value] of Object.entries(tempColors)) {
-      // If the value is a hex string (e.g., "#ff0000"), convert to RGB
-      if (typeof value === 'string' && value.startsWith('#') && value.length === 7) {
-        const aRgbHex = value.replace('#', '').match(/.{1,2}/g);
-        tempColors[key] = `${parseInt(aRgbHex[0], 16)} ${parseInt(aRgbHex[1], 16)} ${parseInt(aRgbHex[2], 16)}`;
-      }
-      // If the value is an object (like `colors.red`), recursively convert to RGB
-      else if (typeof value === 'object' && value !== null) {
-        tempColors[key] = helpers.toRGB(value);
-      }
-    }
-    return tempColors;
-  },
-};
+  module.exports = helpers;
+  

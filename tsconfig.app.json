@@ -3,6 +3,7 @@
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/**/*.ts", "src/**/*.d.ts", "matrixcnfg.ts"],
   "exclude": ["src/**/__tests__/*", "src/**/*.spec.ts"],  // Adjust exclude pattern if needed
   "compilerOptions": {
+    "allowJs": true,
     "types": ["node"],
     "typeRoots": [
       "node_modules/@types"
