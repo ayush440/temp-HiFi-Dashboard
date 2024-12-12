@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Privacy Policy</title>
+    <style>
+        .capitalize-name {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Privacy Policy</h1>
+    <p>At  <span id="name2" class="capitalize-name"></span>, one of our principal needs is the protection of our visitors. This Privacy Policy report contains sorts of data that is gathered and recorded by <span id="name1" class="capitalize-name"></span> and how we use it. If you have additional inquiries or require more information about our Privacy Policy, don't hesitate to get in touch with us at 
+        <!-- <a href="mailto:support@matrixtradingtech.com">support@matrixtradingtech.com</a> -->
+        .</p>
+
+    <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website regarding the information that they shared and/or collected in <span id="name5" class="capitalize-name"></span>. This policy is not applicable to any data collected, extracted, or through channels other than this website.</p>
+
+    <h2>Consent</h2>
+    <p>By using our website, you agree to our Privacy Policy and consent to its terms.</p>
+
+    <h2>Information we collect</h2>
+    <p>The personal data that you are asked to provide, and the reasons why you are asked to provide it, will be explained to you at the point we request your personal information.</p>
+
+    <p>In the event that you contact us directly, we may receive additional information about you, such as your name, email address, phone number, the content of the message, and any attachments you may send us, and any other information you may choose to provide.</p>
+
+    <p>When you register for an Account, we may request your contact information, including items such as name, company name, address, email address, and phone number.</p>
+
+    <h2>How we use your information</h2>
+    <ul>
+        <li>Provide, operate, and maintain our website.</li>
+        <li>Improve, personalize, and expand our website.</li>
+        <li>Understand and analyze how you use our Website.</li>
+        <li>Develop new products, services, features, and functionality.</li>
+        <li>Contact you, either directly or through one of our partners, including for customer service, to provide you with updates and other information related to the site, and for marketing purposes.</li>
+        <li>Send you emails.</li>
+        <li>Discover and prevent fraud.</li>
+    </ul>
+
+    <h2>Log Files</h2>
+    <p><span id="name3" class="capitalize-name"></span> follows a standard procedure of using log files. All hosting companies do this and a type of hosting services' analytics. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and potentially the number of clicks. The purpose of the data is for analyzing trends, administering the site, tracking users' movement on the site, and gathering demographic information.</p>
+
+    <h2>Third Party Privacy Policies</h2>
+    <p><span id="name4" class="capitalize-name"></span> Privacy Policy does not apply to other advertisers or websites. Therefore, we encourage you to consult the individual Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions on how to opt-out of certain options.</p>
+
+    <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific internet browsers, it can be found on the browsers' respective websites.</p>
+
+    <h2>GDPR Data Protection Rights</h2>
+    <p>We would like to make sure you are fully aware of all your data protection rights. Each user is entitled to the following:</p>
+
+    <ul>
+        <li>The right to access - You have the right to request copies of your personal data. We may charge you a small fee for this service.</li>
+        <li>The right to rectification - You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</li>
+        <li>The right to erasure - You have the right to request that we delete your personal data, under certain conditions.</li>
+        <li>The right to restrict processing - You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+        <li>The right to object processing - You have the right to object to our processing of your personal data, under certain conditions.</li>
+        <li>The right to data portability - You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+    </ul>
+
+    <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please feel free to get in touch with us.</p>
+
+
+
+
+    <script>
+        function extractDomain(url) {
+            const parsedUrl = new URL(url);
+            const hostname = parsedUrl.hostname;
+
+            const domain = hostname.replace(/^www\./i, '');
+            if(domain == "localhost") return "localhost";
+
+            const parts = domain.split('.');
+
+            let mainDomain = parts.slice(1).join('.');
+            
+            return mainDomain;
+        }
+    
+        // Get the current URL
+        const currentUrl = window.location.href;
+    
+        const domain = extractDomain(currentUrl);
+    
+        // Display the domain name in the names
+        const names = document.querySelectorAll('.capitalize-name');
+        names.forEach(placeholder => {
+            placeholder.textContent = domain;
+        });
+    </script>
+
+
+
+</body>
+
+</html>

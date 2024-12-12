@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+
+    <script>
+
+      (function() {
+        
+        const url = window.location.href;
+        const parsedUrl = new URL(url);
+
+        let count = 0, newHostname = '';
+        let urlHostNameArray = parsedUrl.hostname.split(".");
+
+        // name of image 
+        for (let i = 0; i < urlHostNameArray.length; i++) {
+            if(urlHostNameArray[i] == "www" && count == 0){
+                continue;
+            } else if(count == 0){
+                count = 1;
+            } else {
+                newHostname += urlHostNameArray[i] + "_"
+            }
+        }
+        const favName = newHostname.slice(0, -1) + "_small_logo.png"; //   smallimage.png
+        const faviconUrl = `/images/logo/${favName}`;
+        // const faviconUrl = "/images/iifl.ong";
+
+
+        const faviconLink = document.getElementById('dynamic-favicon');
+        
+        if (faviconLink) {
+          faviconLink.href = faviconUrl;  // Update existing link
+        } else {
+          const newLink = document.createElement('link');
+          newLink.rel = 'icon';
+          newLink.href = faviconUrl;
+          document.head.appendChild(newLink);  // Create new link if not found
+        }
+
+      })();
+    </script>
+  </body>
+</html>

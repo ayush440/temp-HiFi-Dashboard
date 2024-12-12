@@ -1,0 +1,27 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.vitest.json"
+    }
+  ],
+  "compilerOptions": {
+    // "types": ["node"],
+    // "typeRoots": [
+    //   "node_modules/@types"
+    //   ],
+    "module": "NodeNext",
+    "allowJs": true,  // Allow importing JavaScript files
+    "resolveJsonModule": true,  // Allow importing JSON files
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}

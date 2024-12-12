@@ -1,0 +1,101 @@
+.dark{
+  .xsmall-box-shadow{
+    @apply shadow-sm shadow-[rgb(var(--color-table-text))];
+  }
+  
+  .small-box-shadow{
+    // box-shadow: 0px 2px 2px 1px rgb(var(--color-secondary-light));
+    @apply border border-slate-600 shadow-sm shadow-[rgb(var(--color-table-text))];
+  }
+
+  .medium-box-shadow{
+    box-shadow: 1px 1px 3px 1px rgb(var(--color-secondary-light));
+  }
+  
+  .large-box-shadow{
+    border: 1px solid rgb(var(--color-secondary));
+    box-shadow: 0px 1px 3px 1px rgb(var(--color-secondary-light));
+  }
+
+
+
+
+
+
+  // select {
+  //   @apply text-black bg-gray-200;
+
+  //   option {
+  //     @apply  text-black bg-gray-200;
+  //   }
+  // }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .dark {
+//   .navbar,
+//   .menubar {
+//     ul li {
+//       color: white;
+//     }
+//   }
+
+//   .logo-lg {
+//     box-shadow: 0px 1px 7px 2px theme('colors.gray.50');
+//   }
+
+//   .text-danger {
+//     @apply text-[#db7093]
+//   }
+
+//   input{
+//     @apply  text-black bg-gray-200;
+//   }
+//   input:disabled {
+//     @apply cursor-not-allowed bg-gray-400;
+//   }
+//   select {
+//     @apply text-black bg-gray-200;
+
+//     option {
+//       @apply  text-black bg-gray-200;
+//     }
+//   }
+  
+//   table{
+//     @apply brightness-100;
+//     tr {
+//       @apply bg-primary;
+//     }
+//     tbody{
+//       tr:hover  {
+//         @apply bg-primary brightness-75;
+//       }
+//     }
+//   }
+
+//   .header {
+//     @apply text-white;
+//   }
+//   .vfm__content {
+//     @apply  text-tableText;
+//   }
+
+//   .toast-container {
+//     z-index: 9999 !important;
+//     @apply fixed top-5 right-5 flex flex-col items-end;
+//   }
+// }

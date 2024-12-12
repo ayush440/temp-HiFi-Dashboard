@@ -1,0 +1,85 @@
+@import './colors.scss';
+@import './vue-final-modal/style.scss';
+@import './table-report.scss';
+@import './tabulator.scss';
+@import './dark.scss';
+@import './nav.scss';
+@import './login4.scss';
+@import './login3.scss';
+@import './form.scss';
+@import './button.scss';
+@import './select.scss';
+@import './dropdown.scss';
+@import './intro.scss';
+@import './checkbox.scss';
+@import './datePicker.scss';
+
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-image: linear-gradient(
+    to right,
+    rgb(207, 206, 206) 50%,
+    rgb(255, 255, 255) 100%,
+    rgb(155, 155, 155) 100%
+  );
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    to right,
+    rgb(var(--color-primary)) 50%,
+    rgb(105, 102, 170) 100%,
+    rgb(37, 154, 154) 100%
+  );
+}
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
+body {
+  transition: opacity 0.3s ease-in-out;
+}
+
+body.fade-out {
+  opacity: 0.1;
+}
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+
+
+
+.xsmall-box-shadow{
+  @apply shadow-sm shadow-[#dfdede];
+}
+
+.small-box-shadow{
+  box-shadow: 0px 2px 2px 1px #dfdede;
+}
+
+.medium-box-shadow{
+  box-shadow: 1px 1px 3px 1px #c9c8c8;
+}
+
+.large-box-shadow{
+  border: 1px solid rgb(var(--color-secondary));
+  box-shadow: 0px 1px 3px 1px #c9c8c8;
+}
+
+
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}

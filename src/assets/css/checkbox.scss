@@ -1,0 +1,31 @@
+
+// [type=checkbox], [type=radio] {
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+//     padding: 0;
+//     -webkit-print-color-adjust: exact;
+//     print-color-adjust: exact;
+//     display: inline-block;
+//     vertical-align: middle;
+//     background-origin: border-box;
+//     -webkit-user-select: none;
+//     user-select: none;
+//     flex-shrink: 0;
+//     color: rgb(var(--color-primary));
+//     border-color: #6b7280;
+//     border-width: 1px;
+//     box-shadow: 0 0 #0000;
+// }
+
+// [type=checkbox]:checked {
+//     background-image: url("@/assets/svgs/check.svg");
+// }
+
+// [type=checkbox]:checked, .dark [type=checkbox]:checked{
+//     border-color: white;
+//     background-color: currentColor;
+//     background-size: 100% 100%;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }

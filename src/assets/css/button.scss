@@ -1,0 +1,101 @@
+.add-edit-btn {
+  background-image: none !important;
+  @apply inline-flex items-center m-1 px-4 py-2 border rounded-lg bg-primary text-white shadow hover:bg-primary hover:text-white focus:ring;
+}
+.delete-btn {
+  @apply text-[#db7093] flex text-nowrap;
+}
+
+.btn {
+  background-image: none !important;
+  @apply inline-flex	items-center m-1 px-4 py-2 border rounded-lg shadow hover:bg-primary hover:outline-none hover:border-primary hover:ring;
+}
+
+.btn-submit {
+  background-image: none !important;
+  @apply m-1 max-h-[3rem] px-4 py-2 border rounded-lg bg-primary text-white hover:filter hover:brightness-90 focus:outline-none focus:border-gray-400 focus:ring focus:ring-gray-200;
+}
+.btn-danger{
+  @apply m-1 max-h-[3rem] px-4 py-2 border rounded-lg bg-[#db7093] text-white hover:filter hover:brightness-90 focus:outline-none focus:border-gray-400 focus:ring focus:ring-gray-200;
+}
+
+.btn-close {
+  @apply m-1 max-h-[3rem] px-4 py-2 border rounded-lg bg-white text-black hover:bg-gray-300 focus:outline-none focus:border-gray-400 focus:ring focus:ring-gray-200;
+}
+// .pagination-btn {
+//   @apply px-3 py-1 mr-2 rounded shadow-md text-tableText bg-white dark:bg-primary;
+// }
+// .active {
+//   @apply filter brightness-90 dark:brightness-75 ;
+// }
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
+
+.empty-btn{
+  @apply md:w-[145px] w-[50px];
+}
+
+.pagination-text{
+  @apply text-tableText;
+}
+
+
+// for new theme
+.btn {
+  background-image: none !important;
+  @apply inline-flex	items-center m-1 px-4 py-1 border rounded-lg shadow hover:bg-primary hover:outline-none hover:border-primary hover:ring;
+}
+
+
+.add-new-btn{
+  @apply small-box-shadow bg-secondary border border-third dark:border-white mx-1 text-center text-sm m-1 max-h-[3rem] px-2 py-1 rounded-lg hover:filter hover:brightness-90 focus:outline-none focus:border-gray-400 focus:ring focus:ring-gray-200;
+}
+
+.sq-off-btn{
+  @apply flex items-center xsmall-box-shadow text-white bg-[#db7093] border border-gray-50 mx-1 text-center text-sm  max-h-[3rem] px-2 py-1 rounded-lg hover:filter hover:brightness-90 focus:outline-none focus:border-gray-400 focus:ring focus:ring-gray-200;
+}
+
+.btn-submit {
+  background-image: none !important;
+  @apply m-1 max-h-[3rem] px-4 py-1.5 border rounded-lg bg-primary text-white hover:filter hover:brightness-90 focus:outline-none focus:border-gray-400 focus:ring focus:ring-gray-200;
+}
+
+
+.btn-close {
+  @apply m-1 max-h-[3rem] px-4 py-1.5 border rounded-lg bg-secondary text-black dark:text-white dark:hover:text-gray-600 hover:bg-gray-300 focus:outline-none focus:border-gray-400 focus:ring focus:ring-gray-200;
+}
+
+.btn-danger {
+  @apply m-1 max-h-[3rem] px-4 py-1.5 border rounded-lg bg-[#db7093] text-white hover:filter hover:brightness-90 focus:outline-none focus:border-gray-400 focus:ring focus:ring-gray-200;
+}
+
+// pagination btn start here
+.pagination-btn {
+  @apply cursor-pointer flex items-center justify-center font-bold  p-2 mx-4 rounded-lg shadow-md text-gray-800 dark:text-white bg-secondary dark:bg-primary;
+  box-shadow: 1px 1px 3px 1px #c9c8c8;
+}
+.dark{
+  .pagination-btn{
+    box-shadow: 1px 1px 3px 1px rgb(var(--color-secondary-light));
+  }
+}
+
+.active{
+  @apply text-blue-500 dark:text-white dark:font-semibold;
+}
+
+.disabled{
+  @apply opacity-75 cursor-not-allowed;
+}
+
+.search-box {
+  @apply xsmall-box-shadow  w-full px-4 pl-6 py-1 text-sm outline-none border rounded bg-secondary border-gray-50 dark:border-slate-800 ;
+}
+
+.search-select-box{
+  @apply xsmall-box-shadow  w-full my-1 max-h-[3rem] px-2 py-1  text-sm outline-none border rounded bg-secondary border-gray-50 dark:border-slate-800;
+}
+
+// pagination btn end here

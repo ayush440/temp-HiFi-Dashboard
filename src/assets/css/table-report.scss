@@ -1,0 +1,21 @@
+.table-report {
+  border-spacing: 0 2px;
+  border-collapse: separate;
+  overflow: hidden;
+  tbody tr {
+    transition:
+      transform 1s,
+      opacity 1s;
+    animation: slideInAnimation 1s;
+  }
+  @keyframes slideInAnimation {
+    0% {
+      transform: translateX(-10%) scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+}

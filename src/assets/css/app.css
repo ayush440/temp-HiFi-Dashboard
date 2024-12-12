@@ -1,0 +1,29 @@
+@import './colors.scss';
+@import './vue-final-modal/style.scss';
+@import './table-report.scss';
+@import './tabulator.scss';
+@import './dark.scss';
+@import './nav.scss';
+@import './login4.scss';
+@import './login3.scss';
+@import './form.scss';
+@import './button.scss';
+@import './select.scss';
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-image: linear-gradient(
+    to right,
+    gray 50%,
+    rgb(106, 110, 112) 100%,
+    rgb(169, 180, 180) 100%
+  );
+}
+.text-nowrap {
+  text-wrap: nowrap;
+}

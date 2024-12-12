@@ -1,0 +1,70 @@
+
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+form {
+  input {
+    @apply w-full bg-secondary-light px-2 py-1 box-border border border-primary dark:border-gray-400 rounded focus:outline-1 focus:outline-primary;
+
+    &.is-invalid {
+      @apply border-red-800 focus:outline-red-800 bg-red-50 text-red-500;
+    }
+  }
+  
+  
+
+  input:disabled {
+    @apply cursor-not-allowed bg-secondary-bold;
+  }
+  .input-form span {
+    @apply text-red-500;
+  }
+
+  input[type="date"] {
+    @apply py-[3px]
+  }
+  textarea {
+    @apply w-full h-[35px] px-2 py-1 box-border border border-primary rounded focus:outline-1 focus:outline-primary;
+  }
+
+  select {
+    @apply w-full bg-secondary-light dark:border-gray-400 px-2 py-1 box-border border border-primary rounded cursor-pointer focus:outline-1 focus:outline-primary;
+  }
+
+}
+
+.form-button {
+  display: flex;
+  .form-switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 20px;
+    width: 3.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 9999px;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    border-width: 1px;
+
+    .switch-ring {
+      position: absolute;
+      background-color: #fff;
+      border-radius: 9999px;
+      // transform: translateX(0);
+    }
+  }
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  @apply  invert-0 dark:invert;
+}

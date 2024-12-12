@@ -1,0 +1,427 @@
+/* Default colors */
+:root {
+  // primary  
+  --color-primary-light: 23 201 255;
+  --color-primary: 123 201 255;
+  --color-primary-bold: 223 201 255;
+
+  // secondary   mainly for table bg
+  --color-secondary-light: 255 255 255;
+  --color-secondary: 255 255 255;
+  --color-secondary-bold: 236 237 238;
+
+  // third  mainly for bg except table
+  --color-third-light: 249 250 251;      //hover row, modal bg
+  --color-third: 243 244 246;
+  --color-third-bold: 229 231 235;
+
+  --color-fourth: 107 114 143;
+  --color-head: theme("colors.rgb.gray.900");
+  --color-table-text: theme("colors.rgb.slate.800");
+  --color-table-td: theme("colors.rgb.gray.50");
+
+  --color-success: theme('colors.rgb.emerald.600');
+  --color-info: theme('colors.rgb.cyan.500');
+  --color-warning: theme('colors.rgb.yellow.400');
+  --color-pending: theme('colors.rgb.amber.500');
+  --color-danger: theme('colors.rgb.rose.600');
+  --color-success: theme('colors.rgb.teal.600');
+  --color-light: theme('colors.rgb.slate.100');
+  &.dark {
+    // primary  
+    --color-primary-light: 110 180 228;
+    --color-primary: 16 26 32;
+    --color-primary-bold: 223 201 255;
+
+    // secondary   mainly for table bg
+    --color-secondary-light: 49 74 95;    // for dark shadow
+    --color-secondary: 21 52 72;
+    --color-secondary-bold: 20 22 72;
+
+    // third  mainly for bg except table
+    --color-third-light: 39 66 88;      //hover row, modal bg
+    --color-third: 11 26 36;
+    --color-third-bold: 25 25 21;
+
+    --color-fourth: theme("colors.rgb.gray.200");
+    --color-table-text: 189 228 255;
+    --color-table-td: 255 255 255;
+
+    --color-success: theme('colors.rgb.teal.600');
+    --color-info: theme('colors.rgb.cyan.500');
+    --color-light: theme('colors.rgb.slate.100');
+  }
+  --color-slate-50: theme('colors.rgb.slate.50');
+  --color-slate-100: theme('colors.rgb.slate.100');
+  --color-slate-200: theme('colors.rgb.slate.200');
+  --color-slate-300: theme('colors.rgb.slate.300');
+  --color-slate-400: theme('colors.rgb.slate.400');
+  --color-slate-500: theme('colors.rgb.slate.500');
+  --color-slate-600: theme('colors.rgb.slate.600');
+  --color-slate-700: theme('colors.rgb.slate.700');
+  --color-slate-800: theme('colors.rgb.slate.800');
+  --color-slate-900: theme('colors.rgb.slate.900');
+  --login-bg-1: rgb(23, 37, 84);
+  --color-buy-background-100: rgba(65, 132, 243, 0.1);
+  --color-buy-100: #4184f3;
+  --color-sell-background-100: rgba(223, 81, 76, 0.1);
+  --color-sell-100: #df514c;
+  --color-pending-background-100: rgba(68, 68, 68, 0.1);
+  --color-pending-100: #837a7a;
+  --color-success-background-100: rgba(76, 175, 80, 0.1);
+  --color-success-100: #4caf50;
+  --color-product-background-100: rgba(217, 134, 61, 0.1);
+  --color-product-100: #d9863d;
+}
+
+/* Theme 1 colors */
+.theme-1 {
+ // primary  
+ --color-primary-light: 107 105 253;
+ --color-primary: 58 56 196;
+ --color-primary-bold: 44 42 147;
+
+ // secondary   mainly for table bg
+ --color-secondary-light: 253 250 250;
+ --color-secondary: 251 251 255;
+ --color-secondary-bold: 246 246 255;
+
+ // third  mainly for bg except table
+ --color-third-light: 246 246 255;      //hover row, modal bg
+ --color-third: 236 236 255;
+ --color-third-bold: 229 229 255;
+
+ --color-fourth: 84 84 97;
+ --color-table-text: theme("colors.rgb.slate.800");
+ --color-table-td: theme("colors.rgb.gray.50");
+
+ --color-success: theme('colors.rgb.emerald.600');
+ --color-info: theme('colors.rgb.cyan.500');
+ --color-warning: theme('colors.rgb.yellow.400');
+ --color-pending: theme('colors.rgb.amber.500');
+ --color-danger: theme('colors.rgb.rose.600');
+ --color-success: theme('colors.rgb.teal.600');
+ --color-light: theme('colors.rgb.slate.100');
+  &.dark {
+      --color-primary: theme("colors.rgb.emerald.800");
+  }
+}
+
+/* Theme 2 colors */
+.theme-2 {
+  // primary  
+ --color-primary-light: 107 105 253;
+ --color-primary: 209 3 99;
+ --color-primary-bold: 44 42 147;
+
+ // secondary   mainly for table bg
+ --color-secondary-light: 253 250 250;
+ --color-secondary: 254 244 249;
+ --color-secondary-bold: 237 236 235;
+
+ // third  mainly for bg except table
+ --color-third-light: 246 246 255;      //hover row, modal bg
+ --color-third: 250 224 236;
+ --color-third-bold: 241 211 225;
+
+ --color-fourth: theme("colors.rgb.gray.800");
+ --color-table-text: theme("colors.rgb.slate.800");
+ --color-table-td: theme("colors.rgb.gray.50");
+
+ --color-success: theme('colors.rgb.emerald.600');
+ --color-info: theme('colors.rgb.cyan.500');
+ --color-warning: theme('colors.rgb.yellow.400');
+ --color-pending: theme('colors.rgb.amber.500');
+ --color-danger: theme('colors.rgb.rose.600');
+ --color-success: theme('colors.rgb.teal.600');
+ --color-light: theme('colors.rgb.slate.100');
+  &.dark {
+      --color-primary: theme("colors.rgb.blue.800");
+  }
+}
+
+/* Theme 3 colors */
+.theme-3 {
+   // primary  
+ --color-primary-light: 107 105 253;
+ --color-primary: 0 65 177;
+ --color-primary-bold: 44 42 147;
+
+ // secondary   mainly for table bg
+ --color-secondary-light: 253 250 250;
+ --color-secondary: 231 237 247;
+ --color-secondary-bold: 236 241 250;
+
+ // third  mainly for bg except table
+ --color-third-light: 246 246 255;      //hover row, modal bg
+ --color-third: 203 220 247;
+ --color-third-bold: 229 229 255;
+
+ --color-fourth: 94, 84, 97;
+ --color-table-text: theme("colors.rgb.slate.800");
+ --color-table-td: theme("colors.rgb.gray.50");
+
+ --color-success: theme('colors.rgb.emerald.600');
+ --color-info: theme('colors.rgb.cyan.500');
+ --color-warning: theme('colors.rgb.yellow.400');
+ --color-pending: theme('colors.rgb.amber.500');
+ --color-danger: theme('colors.rgb.rose.600');
+ --color-success: theme('colors.rgb.teal.600');
+ --color-light: theme('colors.rgb.slate.100');
+  &.dark {
+      --color-primary: theme("colors.rgb.cyan.800");
+  }
+}
+
+/* Theme 4 colors */
+.theme-4 {
+  // primary  
+ --color-primary-light: 83 77 74;
+ --color-primary: 60 54 51;
+ --color-primary-bold: 45 41 39;
+
+ // secondary   mainly for table bg
+ --color-secondary-light: 247 246 245;
+ --color-secondary: 238 237 235;
+ --color-secondary-bold: 230 229 227;
+
+ // third  mainly for bg except table
+ --color-third-light: 227 226 224;      //hover row, modal bg
+ --color-third: 216 215 212;
+ --color-third-bold: 194 192 189;
+
+ --color-fourth: 84, 84, 97;
+ --color-table-text: theme("colors.rgb.slate.800");
+ --color-table-td: theme("colors.rgb.gray.50");
+
+ --color-success: theme('colors.rgb.emerald.600');
+ --color-info: theme('colors.rgb.cyan.500');
+ --color-warning: theme('colors.rgb.yellow.400');
+ --color-pending: theme('colors.rgb.amber.500');
+ --color-danger: theme('colors.rgb.rose.600');
+ --color-success: theme('colors.rgb.teal.600');
+ --color-light: theme('colors.rgb.slate.100');
+  &.dark {
+    --color-primary: theme("colors.rgb.teal.700");
+  }
+}
+
+
+.theme-5 {
+  // primary  
+  --color-primary-light: 83 77 74;
+  --color-primary: 99 136 137;
+  --color-primary-bold: 45 41 39;
+ 
+  // secondary   mainly for table bg
+  --color-secondary-light: 247 246 245;
+  --color-secondary: 228 231 233;
+  --color-secondary-bold: 230 229 227;
+ 
+  // third  mainly for bg except table
+  --color-third-light: 227 226 224;      //hover row, modal bg
+  --color-third: 203 213 215;
+  --color-third-bold: 196 209 210;
+ 
+  --color-fourth: 50 68 69;
+  --color-table-text: theme("colors.rgb.slate.800");
+  --color-table-td: theme("colors.rgb.gray.50");
+ 
+  --color-success: theme('colors.rgb.emerald.600');
+  --color-info: theme('colors.rgb.cyan.500');
+  --color-warning: theme('colors.rgb.yellow.400');
+  --color-pending: theme('colors.rgb.amber.500');
+  --color-danger: theme('colors.rgb.rose.600');
+  --color-success: theme('colors.rgb.teal.600');
+  --color-light: theme('colors.rgb.slate.100');
+  &.dark {
+      --color-primary: theme("colors.rgb.indigo.700");
+  }
+}
+
+
+.theme-6 {
+  // primary  
+  --color-primary-light: 85 137 129;
+  --color-primary: 73 96 90;
+  --color-primary-bold: 45 41 39;
+ 
+  // secondary   mainly for table bg
+  --color-secondary-light: 233 248 248;
+  --color-secondary: 210 240 240;
+  --color-secondary-bold: 230 229 227;
+ 
+  // third  mainly for bg except table
+  --color-third-light: 204 236 239;      //hover row, modal bg
+  --color-third: 164 224 225;
+  --color-third-bold: 91 158 149;
+ 
+  --color-fourth: 50 68 69;
+  --color-table-text: theme("colors.rgb.slate.800");
+  --color-table-td: theme("colors.rgb.gray.50");
+ 
+  --color-success: theme('colors.rgb.emerald.600');
+  --color-info: theme('colors.rgb.cyan.500');
+  --color-warning: theme('colors.rgb.yellow.400');
+  --color-pending: theme('colors.rgb.amber.500');
+  --color-danger: theme('colors.rgb.rose.600');
+  --color-success: theme('colors.rgb.teal.600');
+  --color-light: theme('colors.rgb.slate.100');
+  &.dark {
+    --color-primary: theme("colors.rgb.cyan.700");
+  }
+}
+
+
+
+
+
+
+
+.theme-7 {
+  // primary  
+  --color-primary-light: 85 137 129;
+  --color-primary: 73 96 90;
+  --color-primary-bold: 45 41 39;
+ 
+  // secondary   mainly for table bg
+  --color-secondary-light: 240 251 251;
+  --color-secondary: 230 247 247 ;
+  --color-secondary-bold: 220 244 244;
+ 
+  // third  mainly for bg except table
+  --color-third-light: 228 247 247;   //hover row, modal bg
+  --color-third: 210 240 240;
+  --color-third-bold: 188 219 220;
+ 
+  --color-fourth: 50 68 69;
+  --color-table-text: theme("colors.rgb.slate.800");
+  --color-table-td: theme("colors.rgb.gray.50");
+ 
+  --color-success: theme('colors.rgb.emerald.600');
+  --color-info: theme('colors.rgb.cyan.500');
+  --color-warning: theme('colors.rgb.yellow.400');
+  --color-pending: theme('colors.rgb.amber.500');
+  --color-danger: theme('colors.rgb.rose.600');
+  --color-success: theme('colors.rgb.teal.600');
+  --color-light: theme('colors.rgb.slate.100');
+  &.dark {
+    --color-primary: theme("colors.rgb.blue.700");
+  }
+}
+
+
+.theme-8 {
+  --color-primary: theme("colors.rgb.yellow.900");
+  --color-secondary: theme("colors.rgb.orange.200"); 
+  --color-success: theme("colors.rgb.teal.600");
+  --color-info: theme("colors.rgb.pink.500"); 
+  --color-warning: theme("colors.rgb.yellow.500");
+  --color-pending: theme("colors.rgb.blue.600");
+  --color-danger: theme("colors.rgb.orange.700");
+  --color-light: theme("colors.rgb.gray.100");
+  --color-third: theme("colors.rgb.yellow.50");
+  --color-fourth: theme("colors.rgb.gray.900");
+  --color-table-text: theme("colors.rgb.yellow.900");
+  --color-table-td: theme("colors.rgb.orange.950");
+  &.dark {
+    --color-primary: theme("colors.rgb.yellow.700");
+  }
+}
+
+
+
+
+
+.theme-9 {
+  --color-primary: theme("colors.rgb.green.900"); 
+  --color-secondary: theme("colors.rgb.orange.200");
+  --color-success: theme("colors.rgb.teal.600");
+  --color-info: theme("colors.rgb.blue.500");
+  --color-warning: theme("colors.rgb.yellow.500");
+  --color-pending: theme("colors.rgb.blue.600");
+  --color-danger: theme("colors.rgb.orange.700");
+  --color-light: theme("colors.rgb.gray.100");
+  --color-third: theme("colors.rgb.green.50");
+  --color-fourth: theme("colors.rgb.gray.900");
+  --color-table-text: theme("colors.rgb.green.900");
+  --color-table-td: theme("colors.rgb.blue.950");
+  &.dark {
+    --color-primary: theme("colors.rgb.green.700");
+  }
+}
+
+
+
+.theme-10 {
+  --color-primary: 255 165 0;
+  --color-secondary: theme('colors.rgb.slate.200');
+  --color-success: theme('colors.rgb.emerald.600');
+  --color-info: theme('colors.rgb.cyan.500');
+  --color-warning: theme('colors.rgb.yellow.400');
+  --color-pending: theme('colors.rgb.amber.500');
+  --color-danger: theme('colors.rgb.rose.600');
+  --color-light: theme('colors.rgb.slate.100');
+  --color-third: theme("colors.rgb.green.50");
+  --color-fourth: theme("colors.rgb.gray.900");
+  --color-table-text: theme("colors.rgb.slate.800");
+  --color-table-td: theme("colors.rgb.gray.50");
+  &.dark {
+    --color-primary: theme('colors.rgb.blue.900');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// some default color for buy and sell
+
+.color-buy-100 {
+  background-color:var(--color-buy-background-100);
+  color:var(--color-buy-100);
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+.color-sell-100 {
+  background-color:var(--color-sell-background-100);
+  color:var(--color-sell-100);
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.color-pending-100 {
+  background-color:var(--color-pending-background-100);
+  color:var(--color-pending-100);
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.color-success-100 {
+  background-color:var(--color-success-background-100);
+  color:var(--color-success-100);
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+
+.content-fit{
+  justify-content: center;
+  display: flex;
+      width: fit-content;
+}
+.xx-small{
+font-size: .6rem;
+}
+.small{
+font-size: .8rem;
+}

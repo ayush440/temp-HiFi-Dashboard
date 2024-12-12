@@ -1,0 +1,16 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/**/*.ts", "src/**/*.d.ts", "matrixcnfg.ts"],
+  "exclude": ["src/**/__tests__/*", "src/**/*.spec.ts"],  // Adjust exclude pattern if needed
+  "compilerOptions": {
+    "types": ["node"],
+    "typeRoots": [
+      "node_modules/@types"
+      ],
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
